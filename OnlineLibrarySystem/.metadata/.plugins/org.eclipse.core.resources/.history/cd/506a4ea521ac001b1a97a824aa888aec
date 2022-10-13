@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;ac.soton.xeventb.xcontext.base">
+    <org.eventb.core.scCarrierSet name="AUTHORS" org.eventb.core.source="/OnlineLibrarySystem/ResourceContext.buc|org.eventb.core.contextFile#ResourceContext|org.eventb.core.carrierSet#_sNBkc6wVEeuZGr2oR5lnFg" org.eventb.core.type="ℙ(AUTHORS)"/>
+    <org.eventb.core.scCarrierSet name="URLS" org.eventb.core.source="/OnlineLibrarySystem/ResourceContext.buc|org.eventb.core.contextFile#ResourceContext|org.eventb.core.carrierSet#_sNBkcqwVEeuZGr2oR5lnFg" org.eventb.core.type="ℙ(URLS)"/>
+    <org.eventb.core.scCarrierSet name="RESOURCE" org.eventb.core.source="/OnlineLibrarySystem/ResourceContext.buc|org.eventb.core.contextFile#ResourceContext|org.eventb.core.carrierSet#_sNBkcKwVEeuZGr2oR5lnFg" org.eventb.core.type="ℙ(RESOURCE)"/>
+    <org.eventb.core.scCarrierSet name="TITLES" org.eventb.core.source="/OnlineLibrarySystem/ResourceContext.buc|org.eventb.core.contextFile#ResourceContext|org.eventb.core.carrierSet#_sNBkcawVEeuZGr2oR5lnFg" org.eventb.core.type="ℙ(TITLES)"/>
+</org.eventb.core.scContextFile>

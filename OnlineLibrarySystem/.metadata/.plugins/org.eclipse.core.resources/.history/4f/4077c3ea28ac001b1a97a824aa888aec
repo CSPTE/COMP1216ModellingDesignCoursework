@@ -1,0 +1,13 @@
+context ResourceContext
+sets
+RESOURCE
+BOOK
+TITLES
+URLS
+AUTHORS
+ISBN
+PUBLISHER
+PUBLISHED_YEAR
+axioms
+@BOOK: BOOK ⊆ RESOURCE
+end

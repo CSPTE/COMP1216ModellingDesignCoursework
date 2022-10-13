@@ -1,0 +1,11 @@
+context OnlineLibrarySystemContext
+sets
+USER
+PASSWORD
+constants
+rootUser
+defaultPassword
+axioms
+@ROOTUSER: rootUser ∈ USER
+@DEFAULTPASSWORD: defaultPassword ∈ PASSWORD
+end

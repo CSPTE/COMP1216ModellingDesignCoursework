@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv23/INV"/>
+    <org.eventb.core.prProof name="CreateBook/inv23/INV"/>
+    <org.eventb.core.prProof name="RemoveBook/inv23/INV"/>
+    <org.eventb.core.prProof name="CreateWebsite/inv23/INV"/>
+    <org.eventb.core.prProof name="CreateArticle/inv23/INV"/>
+    <org.eventb.core.prProof name="RemoveWebsite/inv23/INV"/>
+    <org.eventb.core.prProof name="RemoveArticle/inv23/INV"/>
+</org.eventb.core.prFile>

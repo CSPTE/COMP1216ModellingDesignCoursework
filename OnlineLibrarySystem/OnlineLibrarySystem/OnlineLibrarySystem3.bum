@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;ac.soton.xeventb.xmachine.base" org.eventb.core.generated="false" version="5">
+    <org.eventb.core.refinesMachine name="_51vroK6AEeuKjdkD321BdQ" org.eventb.core.target="OnlineLibrarySystem2"/>
+    <org.eventb.core.seesContext name="_51vroa6AEeuKjdkD321BdQ" org.eventb.core.target="OnlineLibrarySystemContext"/>
+    <org.eventb.core.seesContext name="_51wSsK6AEeuKjdkD321BdQ" org.eventb.core.target="ResourceContext"/>
+    <org.eventb.core.seesContext name="_51wSsa6AEeuKjdkD321BdQ" org.eventb.core.target="ReadingListContext"/>
+    <org.eventb.core.seesContext name="_51wSsq6AEeuKjdkD321BdQ" org.eventb.core.target="BorrowingContext"/>
+    <org.eventb.core.variable name="_51wSs66AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="registeredUsers"/>
+    <org.eventb.core.variable name="_51w5wK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="administrators"/>
+    <org.eventb.core.variable name="_51w5wa6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="lecturers"/>
+    <org.eventb.core.variable name="_51w5wq6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="loggedInUsers"/>
+    <org.eventb.core.variable name="_51w5w66AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="loggingPassword"/>
+    <org.eventb.core.variable name="_51xg0K6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="resource"/>
+    <org.eventb.core.variable name="_51xg0a6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="book"/>
+    <org.eventb.core.variable name="_51xg0q6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="article"/>
+    <org.eventb.core.variable name="_51xg066AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="website"/>
+    <org.eventb.core.variable name="_51xg1K6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="authors"/>
+    <org.eventb.core.variable name="_51yH4K6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="urls"/>
+    <org.eventb.core.variable name="_51yH4a6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="titles"/>
+    <org.eventb.core.variable name="_51yH4q6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="getAuthor"/>
+    <org.eventb.core.variable name="_51yu8K6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="getURL"/>
+    <org.eventb.core.variable name="_51yu8a6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="getTitle"/>
+    <org.eventb.core.variable name="_51zWAK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="publisher"/>
+    <org.eventb.core.variable name="_51zWAa6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="publishedYear"/>
+    <org.eventb.core.variable name="_51z9EK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="isbn"/>
+    <org.eventb.core.variable name="_51z9Ea6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="getPublisher"/>
+    <org.eventb.core.variable name="_510kIK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="getPublishedYear"/>
+    <org.eventb.core.variable name="_510kIa6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="getISBN"/>
+    <org.eventb.core.variable name="_511LMK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="lists"/>
+    <org.eventb.core.variable name="_511LMa6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="getResources"/>
+    <org.eventb.core.variable name="_511LMq6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="getCreator"/>
+    <org.eventb.core.variable name="_511yQK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="getTotalTokens"/>
+    <org.eventb.core.variable name="_511yQa6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="getCurrentTokens"/>
+    <org.eventb.core.variable name="_511yQq6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="getBooks"/>
+    <org.eventb.core.variable name="_511yQ66AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="getReserves"/>
+    <org.eventb.core.variable name="_512ZUK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="queue"/>
+    <org.eventb.core.variable name="_512ZUa6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="bookQueues"/>
+    <org.eventb.core.variable name="_512ZUq6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="getStudent"/>
+    <org.eventb.core.invariant name="_513AYK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="inv25" org.eventb.core.predicate="getTotalTokens ∈ book → ℕ"/>
+    <org.eventb.core.invariant name="_513AYa6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="inv26" org.eventb.core.predicate="getCurrentTokens ∈ book → ℕ"/>
+    <org.eventb.core.invariant name="_513ncK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="inv27" org.eventb.core.predicate="getBooks ∈ registeredUsers ↔ book"/>
+    <org.eventb.core.invariant name="_513nca6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="inv28" org.eventb.core.predicate="getReserves ∈ book → ℕ"/>
+    <org.eventb.core.invariant name="_514OgK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="inv30" org.eventb.core.predicate="queue ⊆ QUEUE"/>
+    <org.eventb.core.invariant name="_514Oga6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="inv31" org.eventb.core.predicate="bookQueues ∈ book → queue"/>
+    <org.eventb.core.invariant name="_514Ogq6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="inv29" org.eventb.core.predicate="getStudent ∈ ℕ ⇸ registeredUsers"/>
+    <org.eventb.core.event name="_5141kK6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="_515coK6AEeuKjdkD321BdQ" org.eventb.core.assignment="getTotalTokens ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="beg25"/>
+        <org.eventb.core.action name="_515coa6AEeuKjdkD321BdQ" org.eventb.core.assignment="getCurrentTokens ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="beg26"/>
+        <org.eventb.core.action name="_515coq6AEeuKjdkD321BdQ" org.eventb.core.assignment="getBooks ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="beg27"/>
+        <org.eventb.core.action name="_516DsK6AEeuKjdkD321BdQ" org.eventb.core.assignment="getReserves ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="beg28"/>
+        <org.eventb.core.action name="_516Dsa6AEeuKjdkD321BdQ" org.eventb.core.assignment="getStudent ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="beg29"/>
+        <org.eventb.core.action name="_516Dsq6AEeuKjdkD321BdQ" org.eventb.core.assignment="queue ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="beg30"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_516qwK6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="LogIn">
+        <org.eventb.core.refinesEvent name="_516qwa6AEeuKjdkD321BdQ" org.eventb.core.target="LogIn"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_516qwq6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="LogOut">
+        <org.eventb.core.refinesEvent name="_517R0K6AEeuKjdkD321BdQ" org.eventb.core.target="LogOut"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_517R0a6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RegisterUser">
+        <org.eventb.core.refinesEvent name="_517R0q6AEeuKjdkD321BdQ" org.eventb.core.target="RegisterUser"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_51744K6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="ChangePassword">
+        <org.eventb.core.refinesEvent name="_51744a6AEeuKjdkD321BdQ" org.eventb.core.target="ChangePassword"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_51744q6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="ChangeToAdministrator">
+        <org.eventb.core.refinesEvent name="_5174466AEeuKjdkD321BdQ" org.eventb.core.target="ChangeToAdministrator"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_518f8K6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="ChangeToLecturer">
+        <org.eventb.core.refinesEvent name="_518f8a6AEeuKjdkD321BdQ" org.eventb.core.target="ChangeToLecturer"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_518f8q6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="CreateBook">
+        <org.eventb.core.refinesEvent name="_518f866AEeuKjdkD321BdQ" org.eventb.core.target="CreateBook"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_519HAK6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RemoveBook">
+        <org.eventb.core.refinesEvent name="_519HAa6AEeuKjdkD321BdQ" org.eventb.core.target="RemoveBook"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_519HAq6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="CreateWebsite">
+        <org.eventb.core.refinesEvent name="_519HA66AEeuKjdkD321BdQ" org.eventb.core.target="CreateWebsite"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_519HBK6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="CreateArticle">
+        <org.eventb.core.refinesEvent name="_519uEK6AEeuKjdkD321BdQ" org.eventb.core.target="CreateArticle"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_519uEa6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RemoveWebsite">
+        <org.eventb.core.refinesEvent name="_519uEq6AEeuKjdkD321BdQ" org.eventb.core.target="RemoveWebsite"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_519uE66AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RemoveArticle">
+        <org.eventb.core.refinesEvent name="_51-VIK6AEeuKjdkD321BdQ" org.eventb.core.target="RemoveArticle"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_51-VIa6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="SearchByTitle">
+        <org.eventb.core.refinesEvent name="_51-VIq6AEeuKjdkD321BdQ" org.eventb.core.target="SearchByTitle"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_51-VI66AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="SearchByISBN">
+        <org.eventb.core.refinesEvent name="_51-8MK6AEeuKjdkD321BdQ" org.eventb.core.target="SearchByISBN"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_51-8Ma6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="CreateReadingList">
+        <org.eventb.core.refinesEvent name="_51-8Mq6AEeuKjdkD321BdQ" org.eventb.core.target="CreateReadingList"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_51-8M66AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RemoveReadingList">
+        <org.eventb.core.refinesEvent name="_51-8NK6AEeuKjdkD321BdQ" org.eventb.core.target="RemoveReadingList"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_51_jQK6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="AddResourceToList">
+        <org.eventb.core.refinesEvent name="_51_jQa6AEeuKjdkD321BdQ" org.eventb.core.target="AddResourceToList"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_51_jQq6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.generated="false" org.eventb.core.label="RemoveResourceFromList">
+        <org.eventb.core.refinesEvent name="_51_jQ66AEeuKjdkD321BdQ" org.eventb.core.target="RemoveResourceFromList"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_51_jRK6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="BorrowBook">
+        <org.eventb.core.parameter name="_52AKUK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="u"/>
+        <org.eventb.core.parameter name="_52AKUa6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="b"/>
+        <org.eventb.core.guard name="_52AKUq6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="b ∈ book"/>
+        <org.eventb.core.guard name="_52AKU66AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="getTotalTokens(b) &gt; getCurrentTokens(b)"/>
+        <org.eventb.core.guard name="_52AxYK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="grd3" org.eventb.core.predicate="u ∈ registeredUsers"/>
+        <org.eventb.core.guard name="_52AxYa6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="grd4" org.eventb.core.predicate="u ∈ loggedInUsers"/>
+        <org.eventb.core.action name="_52BYcK6AEeuKjdkD321BdQ" org.eventb.core.assignment="getCurrentTokens(b) ≔ getCurrentTokens(b) + 1" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_52BYca6AEeuKjdkD321BdQ" org.eventb.core.assignment="getBooks(u) ≔ b" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_52BYcq6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="ReserveBook">
+        <org.eventb.core.parameter name="_52B_gK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="u"/>
+        <org.eventb.core.parameter name="_52B_ga6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="b"/>
+        <org.eventb.core.guard name="_52B_gq6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="b ∈ book"/>
+        <org.eventb.core.guard name="_52B_g66AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="getTotalTokens(b) ≤ getCurrentTokens(b)"/>
+        <org.eventb.core.guard name="_52CmkK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="grd3" org.eventb.core.predicate="u ∈ registeredUsers"/>
+        <org.eventb.core.guard name="_52Cmka6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="grd4" org.eventb.core.predicate="u ∈ loggedInUsers"/>
+        <org.eventb.core.action name="_52Cmkq6AEeuKjdkD321BdQ" org.eventb.core.assignment="getReserves(b) ≔ getReserves(b) + 1" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_52Cmk66AEeuKjdkD321BdQ" org.eventb.core.assignment="getStudent(getReserves(b)) ≔ u" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_52DNoK6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="ReturnBook">
+        <org.eventb.core.parameter name="_52DNoa6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="u"/>
+        <org.eventb.core.parameter name="_52D0sK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="b"/>
+        <org.eventb.core.guard name="_52D0sa6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="b ∈ book"/>
+        <org.eventb.core.guard name="_52D0sq6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="u ∈ registeredUsers"/>
+        <org.eventb.core.guard name="_52EbwK6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="grd3" org.eventb.core.predicate="u ∈ loggedInUsers"/>
+        <org.eventb.core.action name="_52Ebwa6AEeuKjdkD321BdQ" org.eventb.core.assignment="getBooks ≔ getBooks ∖ {u ↦ b}" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_52Ebwq6AEeuKjdkD321BdQ" org.eventb.core.assignment="getCurrentTokens(b) ≔ getCurrentTokens(b) − 1" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_52FC0K6AEeuKjdkD321BdQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="RevokeBook">
+        <org.eventb.core.parameter name="_52FC0a6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="a"/>
+        <org.eventb.core.parameter name="_52FC0q6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="u"/>
+        <org.eventb.core.parameter name="_52Fp4K6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.identifier="b"/>
+        <org.eventb.core.guard name="_52Fp4a6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="b ∈ book"/>
+        <org.eventb.core.guard name="_52Fp4q6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="a ∈ administrators"/>
+        <org.eventb.core.guard name="_52Fp466AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="grd3" org.eventb.core.predicate="u ∈ registeredUsers"/>
+        <org.eventb.core.guard name="_52GQ8K6AEeuKjdkD321BdQ" org.eventb.core.generated="false" org.eventb.core.label="grd4" org.eventb.core.predicate="a ∈ loggedInUsers"/>
+        <org.eventb.core.action name="_52GQ8a6AEeuKjdkD321BdQ" org.eventb.core.assignment="getReserves(b) ≔ getReserves(b) + 1" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_52GQ8q6AEeuKjdkD321BdQ" org.eventb.core.assignment="getStudent(getReserves(b)) ≔ u" org.eventb.core.generated="false" org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

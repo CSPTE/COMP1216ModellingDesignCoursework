@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;ac.soton.xeventb.xcontext.base" org.eventb.core.generated="false" version="3">
+    <org.eventb.core.carrierSet name="_6VEswK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="RESOURCE"/>
+    <org.eventb.core.carrierSet name="_6VEswa5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="TITLES"/>
+    <org.eventb.core.carrierSet name="_6VFT0K5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="URLS"/>
+    <org.eventb.core.carrierSet name="_6VFT0a5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="AUTHORS"/>
+    <org.eventb.core.carrierSet name="_6VFT0q5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="ISBN"/>
+    <org.eventb.core.carrierSet name="_6VFT065QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="PUBLISHER"/>
+    <org.eventb.core.carrierSet name="_6VF64K5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="PUBLISHED_YEAR"/>
+</org.eventb.core.contextFile>

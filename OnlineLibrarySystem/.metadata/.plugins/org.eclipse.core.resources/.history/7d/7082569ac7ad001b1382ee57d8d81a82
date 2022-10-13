@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="6">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="PASSWORD" org.eventb.core.type="ℙ(PASSWORD)"/>
+        <org.eventb.core.poIdentifier name="rootUser" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="defaultPassword" org.eventb.core.type="PASSWORD"/>
+        <org.eventb.core.poPredicate name="defaultPasswore" org.eventb.core.predicate="rootUser∈USER" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc|org.eventb.core.contextFile#OnlineLibrarySystemContext|org.eventb.core.axiom#_AyhVkK2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="defaultPassworf" org.eventb.core.predicate="defaultPassword∈PASSWORD" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc|org.eventb.core.contextFile#OnlineLibrarySystemContext|org.eventb.core.axiom#_AyhVka2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poIdentifier name="AUTHORS" org.eventb.core.type="ℙ(AUTHORS)"/>
+        <org.eventb.core.poIdentifier name="URLS" org.eventb.core.type="ℙ(URLS)"/>
+        <org.eventb.core.poIdentifier name="PUBLISHED_YEAR" org.eventb.core.type="ℙ(PUBLISHED_YEAR)"/>
+        <org.eventb.core.poIdentifier name="PUBLISHER" org.eventb.core.type="ℙ(PUBLISHER)"/>
+        <org.eventb.core.poIdentifier name="RESOURCE" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="TITLES" org.eventb.core.type="ℙ(TITLES)"/>
+        <org.eventb.core.poIdentifier name="ISBN" org.eventb.core.type="ℙ(ISBN)"/>
+        <org.eventb.core.poIdentifier name="LIST" org.eventb.core.type="ℙ(LIST)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="4">
+        <org.eventb.core.poIdentifier name="getCurrentTokens" org.eventb.core.type="ℙ(RESOURCE×ℤ)"/>
+        <org.eventb.core.poIdentifier name="website" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="getPublishedYear" org.eventb.core.type="ℙ(RESOURCE×PUBLISHED_YEAR)"/>
+        <org.eventb.core.poIdentifier name="article" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="getISBN" org.eventb.core.type="ℙ(RESOURCE×ISBN)"/>
+        <org.eventb.core.poIdentifier name="urls" org.eventb.core.type="ℙ(URLS)"/>
+        <org.eventb.core.poIdentifier name="getCreator" org.eventb.core.type="ℙ(LIST×USER)"/>
+        <org.eventb.core.poIdentifier name="authors" org.eventb.core.type="ℙ(AUTHORS)"/>
+        <org.eventb.core.poIdentifier name="publishedYear" org.eventb.core.type="ℙ(PUBLISHED_YEAR)"/>
+        <org.eventb.core.poIdentifier name="book" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="registeredUsers" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="titles" org.eventb.core.type="ℙ(TITLES)"/>
+        <org.eventb.core.poIdentifier name="getStudent" org.eventb.core.type="ℙ(ℤ×USER)"/>
+        <org.eventb.core.poIdentifier name="loggedInUsers" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="getBooks" org.eventb.core.type="ℙ(USER×RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="getTitle" org.eventb.core.type="ℙ(RESOURCE×TITLES)"/>
+        <org.eventb.core.poIdentifier name="administrators" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="lists" org.eventb.core.type="ℙ(LIST)"/>
+        <org.eventb.core.poIdentifier name="getAuthor" org.eventb.core.type="ℙ(RESOURCE×AUTHORS)"/>
+        <org.eventb.core.poIdentifier name="getResources" org.eventb.core.type="ℙ(LIST×RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="getReserves" org.eventb.core.type="ℙ(RESOURCE×ℤ)"/>
+        <org.eventb.core.poIdentifier name="lecturers" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="isbn" org.eventb.core.type="ℙ(ISBN)"/>
+        <org.eventb.core.poIdentifier name="getPublisher" org.eventb.core.type="ℙ(RESOURCE×PUBLISHER)"/>
+        <org.eventb.core.poIdentifier name="loggingPassword" org.eventb.core.type="ℙ(USER×PASSWORD)"/>
+        <org.eventb.core.poIdentifier name="getTotalTokens" org.eventb.core.type="ℙ(RESOURCE×ℤ)"/>
+        <org.eventb.core.poIdentifier name="resource" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="getURL" org.eventb.core.type="ℙ(RESOURCE×URLS)"/>
+        <org.eventb.core.poIdentifier name="publisher" org.eventb.core.type="ℙ(PUBLISHER)"/>
+        <org.eventb.core.poPredicate name="getPublishedYeas" org.eventb.core.predicate="registeredUsers⊆USER" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_AxXfAK2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeat" org.eventb.core.predicate="administrators⊆registeredUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_AxXfAa2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeau" org.eventb.core.predicate="lecturers⊆registeredUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_AxYGEK2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeav" org.eventb.core.predicate="administrators∩lecturers=(∅ ⦂ ℙ(USER))" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_AxYGEa2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeaw" org.eventb.core.predicate="rootUser∈administrators" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_AxYtIK2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeax" org.eventb.core.predicate="loggingPassword∈registeredUsers → PASSWORD" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_AxYtIa2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeay" org.eventb.core.predicate="loggedInUsers⊆registeredUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_AxZUMK2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeaz" org.eventb.core.predicate="resource⊆RESOURCE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.invariant#_3fXR4622EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYea{" org.eventb.core.predicate="partition(resource,book,website,article)" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.invariant#_3fXR5K22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYea|" org.eventb.core.predicate="authors⊆AUTHORS" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.invariant#_3fX48K22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYea}" org.eventb.core.predicate="titles⊆TITLES" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.invariant#_3fX48a22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYea~" org.eventb.core.predicate="urls⊆URLS" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.invariant#_3fX48q22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeb'" org.eventb.core.predicate="getAuthor∈resource ↔ authors" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.invariant#_3fYgAK22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeb(" org.eventb.core.predicate="getURL∈resource ⤖ urls" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.invariant#_3fYgAa22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeb)" org.eventb.core.predicate="getTitle∈resource ⤖ titles" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.invariant#_3fYgAq22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeb*" org.eventb.core.predicate="isbn⊆ISBN" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.invariant#_3fZHEK22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeb+" org.eventb.core.predicate="publisher⊆PUBLISHER" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.invariant#_3fZHEa22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeb," org.eventb.core.predicate="publishedYear⊆PUBLISHED_YEAR" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.invariant#_3fZHEq22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeb-" org.eventb.core.predicate="getPublisher∈resource ∖ website → publisher" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.invariant#_3fZHE622EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeb." org.eventb.core.predicate="getISBN∈book ⤖ isbn" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.invariant#_3fZuIK22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeb/" org.eventb.core.predicate="getPublishedYear∈resource ∖ website → publishedYear" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.invariant#_3fZuIa22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="getPublishedYeb0" org.eventb.core.predicate="lists⊆LIST" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.invariant#_1YWoc62-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="getPublishedYeb1" org.eventb.core.predicate="getResources∈lists ↔ resource" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.invariant#_1YXPgK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="getPublishedYeb2" org.eventb.core.predicate="getCreator∈lists → lecturers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.invariant#_1YXPga2-EeuwufvKDCyVoA"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv25/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemContey:"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(RESOURCE×ℤ))∈(∅ ⦂ ℙ(RESOURCE)) → ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXQ62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YX2kK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCF-U62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXQ62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#INITIALISATION\/inv25\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv26/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemContey:"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(RESOURCE×ℤ))∈(∅ ⦂ ℙ(RESOURCE)) → ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXRK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YX2kK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCF-U62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXRK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#INITIALISATION\/inv26\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv27/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemContey:"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×RESOURCE))∈(∅ ⦂ ℙ(USER))∪{rootUser} ↔ (∅ ⦂ ℙ(RESOURCE))" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-UK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YX2kK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCF-U62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-UK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#INITIALISATION\/inv27\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv28/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemContey:"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(RESOURCE×ℤ))∈(∅ ⦂ ℙ(RESOURCE)) ⤔ ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Ua2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YX2kK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCF-U62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Ua2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#INITIALISATION\/inv28\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="INITIALISATION/inv29/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemContey:"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="(∅ ⦂ ℙ(ℤ×USER))∈ℕ → (∅ ⦂ ℙ(USER))∪{rootUser}" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Uq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YX2kK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCF-U62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Uq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#INITIALISATION\/inv29\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemContey:" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="3">
+        <org.eventb.core.poIdentifier name="getCurrentTokens'" org.eventb.core.type="ℙ(RESOURCE×ℤ)"/>
+        <org.eventb.core.poIdentifier name="getISBN'" org.eventb.core.type="ℙ(RESOURCE×ISBN)"/>
+        <org.eventb.core.poIdentifier name="publisher'" org.eventb.core.type="ℙ(PUBLISHER)"/>
+        <org.eventb.core.poIdentifier name="website'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="getTotalTokens'" org.eventb.core.type="ℙ(RESOURCE×ℤ)"/>
+        <org.eventb.core.poIdentifier name="titles'" org.eventb.core.type="ℙ(TITLES)"/>
+        <org.eventb.core.poIdentifier name="lists'" org.eventb.core.type="ℙ(LIST)"/>
+        <org.eventb.core.poIdentifier name="authors'" org.eventb.core.type="ℙ(AUTHORS)"/>
+        <org.eventb.core.poIdentifier name="loggingPassword'" org.eventb.core.type="ℙ(USER×PASSWORD)"/>
+        <org.eventb.core.poIdentifier name="getURL'" org.eventb.core.type="ℙ(RESOURCE×URLS)"/>
+        <org.eventb.core.poIdentifier name="getStudent'" org.eventb.core.type="ℙ(ℤ×USER)"/>
+        <org.eventb.core.poIdentifier name="article'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="publishedYear'" org.eventb.core.type="ℙ(PUBLISHED_YEAR)"/>
+        <org.eventb.core.poIdentifier name="isbn'" org.eventb.core.type="ℙ(ISBN)"/>
+        <org.eventb.core.poIdentifier name="getPublishedYear'" org.eventb.core.type="ℙ(RESOURCE×PUBLISHED_YEAR)"/>
+        <org.eventb.core.poIdentifier name="book'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="getCreator'" org.eventb.core.type="ℙ(LIST×USER)"/>
+        <org.eventb.core.poIdentifier name="loggedInUsers'" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="getPublisher'" org.eventb.core.type="ℙ(RESOURCE×PUBLISHER)"/>
+        <org.eventb.core.poIdentifier name="getResources'" org.eventb.core.type="ℙ(LIST×RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="getBooks'" org.eventb.core.type="ℙ(USER×RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="getTitle'" org.eventb.core.type="ℙ(RESOURCE×TITLES)"/>
+        <org.eventb.core.poIdentifier name="getReserves'" org.eventb.core.type="ℙ(RESOURCE×ℤ)"/>
+        <org.eventb.core.poIdentifier name="administrators'" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="getAuthor'" org.eventb.core.type="ℙ(RESOURCE×AUTHORS)"/>
+        <org.eventb.core.poIdentifier name="resource'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="lecturers'" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="registeredUsers'" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="urls'" org.eventb.core.type="ℙ(URLS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemContey:" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemContey:" org.eventb.core.poStamp="3"/>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemContey;" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="loggedInUsers'" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="p" org.eventb.core.type="PASSWORD"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemContey;" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemContey;" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈registeredUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_AxbwcK2GEeuBUJAreJDu4Q|org.eventb.core.guard#_AxcXgq2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="p∈PASSWORD" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_AxbwcK2GEeuBUJAreJDu4Q|org.eventb.core.guard#_Axc-kK2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="loggingPassword(u)=p" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_AxbwcK2GEeuBUJAreJDu4Q|org.eventb.core.guard#_AxdloK2GEeuBUJAreJDu4Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemContey=" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="loggedInUsers'" org.eventb.core.type="ℙ(USER)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemContey=" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemContey=" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_AxeMsa2GEeuBUJAreJDu4Q|org.eventb.core.guard#_AxezwK2GEeuBUJAreJDu4Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="RegisterUser/inv27/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemContey&gt;"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getBooks∈registeredUsers∪{u} ↔ book" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-UK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YZrwa2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCHMdK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-UK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#RegisterUser\/inv27\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="RegisterUser/inv29/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemContey&gt;"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getStudent∈ℕ → registeredUsers∪{u}" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Uq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YZrwa2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCHMdK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Uq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#RegisterUser\/inv29\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemContey&gt;" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="loggingPassword'" org.eventb.core.type="ℙ(USER×PASSWORD)"/>
+        <org.eventb.core.poIdentifier name="p" org.eventb.core.type="PASSWORD"/>
+        <org.eventb.core.poIdentifier name="a" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="registeredUsers'" org.eventb.core.type="ℙ(USER)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemContey&gt;" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemContey&gt;" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∉registeredUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_Axfa0K2GEeuBUJAreJDu4Q|org.eventb.core.guard#_AxgB4q2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="u∈USER" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_Axfa0K2GEeuBUJAreJDu4Q|org.eventb.core.guard#_Axgo8K2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="a∈administrators" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_Axfa0K2GEeuBUJAreJDu4Q|org.eventb.core.guard#_AxhQAK2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="p∈PASSWORD" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_Axfa0K2GEeuBUJAreJDu4Q|org.eventb.core.guard#_AxhQAa2GEeuBUJAreJDu4Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemContey?" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="loggingPassword'" org.eventb.core.type="ℙ(USER×PASSWORD)"/>
+        <org.eventb.core.poIdentifier name="p" org.eventb.core.type="PASSWORD"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemContey?" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemContey?" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="u∈loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_AxieIa2GEeuBUJAreJDu4Q|org.eventb.core.guard#_AxjFMq2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="p∈PASSWORD" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_AxieIa2GEeuBUJAreJDu4Q|org.eventb.core.guard#_AxjsQK2GEeuBUJAreJDu4Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemContey@" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="administrators'" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.poIdentifier name="a" org.eventb.core.type="USER"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemContey@" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemContey@" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="a∈administrators" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_AxkTUa2GEeuBUJAreJDu4Q|org.eventb.core.guard#_AxlhcK2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="u∈registeredUsers ∖ (lecturers∪administrators)" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_AxkTUa2GEeuBUJAreJDu4Q|org.eventb.core.guard#_AxmvkK2GEeuBUJAreJDu4Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyA" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="a" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="lecturers'" org.eventb.core.type="ℙ(USER)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyA" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyA" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="a∈administrators" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_Axn9sK2GEeuBUJAreJDu4Q|org.eventb.core.guard#_AxpL0K2GEeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="u∈registeredUsers ∖ (administrators∪lecturers)" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_Axn9sK2GEeuBUJAreJDu4Q|org.eventb.core.guard#_Axpy4K2GEeuBUJAreJDu4Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="CreateBook/inv25/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyB"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getTotalTokens∈book∪{b} → ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXQ62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YcvEK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCIakK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXQ62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#CreateBook\/inv25\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="CreateBook/inv26/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyB"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getCurrentTokens∈book∪{b} → ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXRK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YcvEK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCIakK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXRK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#CreateBook\/inv26\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="CreateBook/inv27/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyB"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getBooks∈registeredUsers ↔ book∪{b}" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-UK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YcvEK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCIakK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-UK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#CreateBook\/inv27\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="CreateBook/inv28/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyB"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getReserves∈book∪{b} ⤔ ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Ua2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YcvEK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCIakK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Ua2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#CreateBook\/inv28\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyB" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="getISBN'" org.eventb.core.type="ℙ(RESOURCE×ISBN)"/>
+        <org.eventb.core.poIdentifier name="publish" org.eventb.core.type="PUBLISHER"/>
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="RESOURCE"/>
+        <org.eventb.core.poIdentifier name="publishedY" org.eventb.core.type="PUBLISHED_YEAR"/>
+        <org.eventb.core.poIdentifier name="publisher'" org.eventb.core.type="ℙ(PUBLISHER)"/>
+        <org.eventb.core.poIdentifier name="titles'" org.eventb.core.type="ℙ(TITLES)"/>
+        <org.eventb.core.poIdentifier name="authors'" org.eventb.core.type="ℙ(AUTHORS)"/>
+        <org.eventb.core.poIdentifier name="is" org.eventb.core.type="ISBN"/>
+        <org.eventb.core.poIdentifier name="getURL'" org.eventb.core.type="ℙ(RESOURCE×URLS)"/>
+        <org.eventb.core.poIdentifier name="tit" org.eventb.core.type="TITLES"/>
+        <org.eventb.core.poIdentifier name="publishedYear'" org.eventb.core.type="ℙ(PUBLISHED_YEAR)"/>
+        <org.eventb.core.poIdentifier name="isbn'" org.eventb.core.type="ℙ(ISBN)"/>
+        <org.eventb.core.poIdentifier name="getPublishedYear'" org.eventb.core.type="ℙ(RESOURCE×PUBLISHED_YEAR)"/>
+        <org.eventb.core.poIdentifier name="book'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="getPublisher'" org.eventb.core.type="ℙ(RESOURCE×PUBLISHER)"/>
+        <org.eventb.core.poIdentifier name="auth" org.eventb.core.type="AUTHORS"/>
+        <org.eventb.core.poIdentifier name="getTitle'" org.eventb.core.type="ℙ(RESOURCE×TITLES)"/>
+        <org.eventb.core.poIdentifier name="ur" org.eventb.core.type="URLS"/>
+        <org.eventb.core.poIdentifier name="getAuthor'" org.eventb.core.type="ℙ(RESOURCE×AUTHORS)"/>
+        <org.eventb.core.poIdentifier name="a" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="resource'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="urls'" org.eventb.core.type="ℙ(URLS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyB" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyB" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="a∈administrators" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fd_kK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fempK22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="a∈loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fd_kK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fempa22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="b∈RESOURCE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fd_kK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3ffNsK22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="b∉resource" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fd_kK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3ffNsa22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="b∉book" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fd_kK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3ffNsq22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="is∈ISBN" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fd_kK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3ff0wK22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="is∉isbn" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fd_kK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3ff0wa22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="publishedY∈PUBLISHED_YEAR" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fd_kK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3ff0wq22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="publish∈PUBLISHER" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fd_kK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3ff0w622EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="auth∈AUTHORS" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fd_kK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fgb0K22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="ur∈URLS" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fd_kK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fgb0a22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="ur∉urls" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fd_kK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fgb0q22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="tit∈TITLES" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fd_kK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fgb0622EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD13" org.eventb.core.predicate="tit∉titles" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fd_kK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fhC4K22EeuBUJAreJDu4Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="RemoveBook/inv25/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyC"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getTotalTokens∈book ∖ {b} → ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXQ62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YdWIK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCIakq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXQ62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#RemoveBook\/inv25\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="RemoveBook/inv26/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyC"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getCurrentTokens∈book ∖ {b} → ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXRK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YdWIK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCIakq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXRK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#RemoveBook\/inv26\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="RemoveBook/inv27/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyC"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getBooks∈registeredUsers ↔ book ∖ {b}" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-UK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YdWIK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCIakq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-UK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#RemoveBook\/inv27\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="RemoveBook/inv28/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyC"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getReserves∈book ∖ {b} ⤔ ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Ua2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YdWIK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCIakq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Ua2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#RemoveBook\/inv28\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyC" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="getISBN'" org.eventb.core.type="ℙ(RESOURCE×ISBN)"/>
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="RESOURCE"/>
+        <org.eventb.core.poIdentifier name="titles'" org.eventb.core.type="ℙ(TITLES)"/>
+        <org.eventb.core.poIdentifier name="getURL'" org.eventb.core.type="ℙ(RESOURCE×URLS)"/>
+        <org.eventb.core.poIdentifier name="isbn'" org.eventb.core.type="ℙ(ISBN)"/>
+        <org.eventb.core.poIdentifier name="getPublishedYear'" org.eventb.core.type="ℙ(RESOURCE×PUBLISHED_YEAR)"/>
+        <org.eventb.core.poIdentifier name="book'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="getPublisher'" org.eventb.core.type="ℙ(RESOURCE×PUBLISHER)"/>
+        <org.eventb.core.poIdentifier name="getResources'" org.eventb.core.type="ℙ(LIST×RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="getTitle'" org.eventb.core.type="ℙ(RESOURCE×TITLES)"/>
+        <org.eventb.core.poIdentifier name="getAuthor'" org.eventb.core.type="ℙ(RESOURCE×AUTHORS)"/>
+        <org.eventb.core.poIdentifier name="a" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="resource'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="urls'" org.eventb.core.type="ℙ(URLS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyC" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyC" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="a∈administrators" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fi4E622EeuBUJAreJDu4Q|org.eventb.core.guard#_3fjfIq22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="a∈loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fi4E622EeuBUJAreJDu4Q|org.eventb.core.guard#_3fjfI622EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="b∈resource" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fi4E622EeuBUJAreJDu4Q|org.eventb.core.guard#_3fkGMK22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="b∈book" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fi4E622EeuBUJAreJDu4Q|org.eventb.core.guard#_3fkGMa22EeuBUJAreJDu4Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyD" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="website'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="titles'" org.eventb.core.type="ℙ(TITLES)"/>
+        <org.eventb.core.poIdentifier name="authors'" org.eventb.core.type="ℙ(AUTHORS)"/>
+        <org.eventb.core.poIdentifier name="getURL'" org.eventb.core.type="ℙ(RESOURCE×URLS)"/>
+        <org.eventb.core.poIdentifier name="tit" org.eventb.core.type="TITLES"/>
+        <org.eventb.core.poIdentifier name="auth" org.eventb.core.type="AUTHORS"/>
+        <org.eventb.core.poIdentifier name="w" org.eventb.core.type="RESOURCE"/>
+        <org.eventb.core.poIdentifier name="getTitle'" org.eventb.core.type="ℙ(RESOURCE×TITLES)"/>
+        <org.eventb.core.poIdentifier name="l" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="ur" org.eventb.core.type="URLS"/>
+        <org.eventb.core.poIdentifier name="getAuthor'" org.eventb.core.type="ℙ(RESOURCE×AUTHORS)"/>
+        <org.eventb.core.poIdentifier name="resource'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="urls'" org.eventb.core.type="ℙ(URLS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyD" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyD" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="l∈lecturers∩loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fnwk622EeuBUJAreJDu4Q|org.eventb.core.guard#_3fo-sK22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="w∉resource∪website" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fnwk622EeuBUJAreJDu4Q|org.eventb.core.guard#_3fo-sa22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="w∈RESOURCE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fnwk622EeuBUJAreJDu4Q|org.eventb.core.guard#_3fo-sq22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="auth∈AUTHORS" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fnwk622EeuBUJAreJDu4Q|org.eventb.core.guard#_3fo-s622EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="ur∈URLS" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fnwk622EeuBUJAreJDu4Q|org.eventb.core.guard#_3fplwK22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="ur∉urls" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fnwk622EeuBUJAreJDu4Q|org.eventb.core.guard#_3fplwa22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="tit∈TITLES" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fnwk622EeuBUJAreJDu4Q|org.eventb.core.guard#_3fplwq22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="tit∉titles" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fnwk622EeuBUJAreJDu4Q|org.eventb.core.guard#_3fplw622EeuBUJAreJDu4Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyE" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="publish" org.eventb.core.type="PUBLISHER"/>
+        <org.eventb.core.poIdentifier name="publishedY" org.eventb.core.type="PUBLISHED_YEAR"/>
+        <org.eventb.core.poIdentifier name="publisher'" org.eventb.core.type="ℙ(PUBLISHER)"/>
+        <org.eventb.core.poIdentifier name="titles'" org.eventb.core.type="ℙ(TITLES)"/>
+        <org.eventb.core.poIdentifier name="authors'" org.eventb.core.type="ℙ(AUTHORS)"/>
+        <org.eventb.core.poIdentifier name="getURL'" org.eventb.core.type="ℙ(RESOURCE×URLS)"/>
+        <org.eventb.core.poIdentifier name="tit" org.eventb.core.type="TITLES"/>
+        <org.eventb.core.poIdentifier name="article'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="publishedYear'" org.eventb.core.type="ℙ(PUBLISHED_YEAR)"/>
+        <org.eventb.core.poIdentifier name="getPublishedYear'" org.eventb.core.type="ℙ(RESOURCE×PUBLISHED_YEAR)"/>
+        <org.eventb.core.poIdentifier name="getPublisher'" org.eventb.core.type="ℙ(RESOURCE×PUBLISHER)"/>
+        <org.eventb.core.poIdentifier name="auth" org.eventb.core.type="AUTHORS"/>
+        <org.eventb.core.poIdentifier name="getTitle'" org.eventb.core.type="ℙ(RESOURCE×TITLES)"/>
+        <org.eventb.core.poIdentifier name="l" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="ur" org.eventb.core.type="URLS"/>
+        <org.eventb.core.poIdentifier name="getAuthor'" org.eventb.core.type="ℙ(RESOURCE×AUTHORS)"/>
+        <org.eventb.core.poIdentifier name="a" org.eventb.core.type="RESOURCE"/>
+        <org.eventb.core.poIdentifier name="resource'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="urls'" org.eventb.core.type="ℙ(URLS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyE" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyE" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="l∈lecturers∩loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fra8K22EeuBUJAreJDu4Q|org.eventb.core.guard#_3ftQIq22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="a∉resource∪article" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fra8K22EeuBUJAreJDu4Q|org.eventb.core.guard#_3ft3MK22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="a∈RESOURCE" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fra8K22EeuBUJAreJDu4Q|org.eventb.core.guard#_3ft3Ma22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="auth∈AUTHORS" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fra8K22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fueQK22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="ur∈URLS" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fra8K22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fueQa22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="ur∉urls" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fra8K22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fueQq22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="tit∈TITLES" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fra8K22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fvFUK22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="tit∉titles" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fra8K22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fvFUa22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="publishedY∈PUBLISHED_YEAR" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fra8K22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fvFUq22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="publish∈PUBLISHER" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fra8K22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fvFU622EeuBUJAreJDu4Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyF" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="website'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="titles'" org.eventb.core.type="ℙ(TITLES)"/>
+        <org.eventb.core.poIdentifier name="getURL'" org.eventb.core.type="ℙ(RESOURCE×URLS)"/>
+        <org.eventb.core.poIdentifier name="getResources'" org.eventb.core.type="ℙ(LIST×RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="w" org.eventb.core.type="RESOURCE"/>
+        <org.eventb.core.poIdentifier name="getTitle'" org.eventb.core.type="ℙ(RESOURCE×TITLES)"/>
+        <org.eventb.core.poIdentifier name="l" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="getAuthor'" org.eventb.core.type="ℙ(RESOURCE×AUTHORS)"/>
+        <org.eventb.core.poIdentifier name="resource'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="urls'" org.eventb.core.type="ℙ(URLS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyF" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyF" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="l∈lecturers∩loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fxhkK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fxhk622EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="w∈resource∩website" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fxhkK22EeuBUJAreJDu4Q|org.eventb.core.guard#_3fyIoK22EeuBUJAreJDu4Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyG" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="titles'" org.eventb.core.type="ℙ(TITLES)"/>
+        <org.eventb.core.poIdentifier name="getURL'" org.eventb.core.type="ℙ(RESOURCE×URLS)"/>
+        <org.eventb.core.poIdentifier name="article'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="getPublishedYear'" org.eventb.core.type="ℙ(RESOURCE×PUBLISHED_YEAR)"/>
+        <org.eventb.core.poIdentifier name="getPublisher'" org.eventb.core.type="ℙ(RESOURCE×PUBLISHER)"/>
+        <org.eventb.core.poIdentifier name="getResources'" org.eventb.core.type="ℙ(LIST×RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="getTitle'" org.eventb.core.type="ℙ(RESOURCE×TITLES)"/>
+        <org.eventb.core.poIdentifier name="l" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="getAuthor'" org.eventb.core.type="ℙ(RESOURCE×AUTHORS)"/>
+        <org.eventb.core.poIdentifier name="a" org.eventb.core.type="RESOURCE"/>
+        <org.eventb.core.poIdentifier name="resource'" org.eventb.core.type="ℙ(RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="urls'" org.eventb.core.type="ℙ(URLS)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyG" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyG" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="l∈lecturers∩loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fyvs622EeuBUJAreJDu4Q|org.eventb.core.guard#_3fzWwq22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="a∈resource∩article" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3fyvs622EeuBUJAreJDu4Q|org.eventb.core.guard#_3fzWw622EeuBUJAreJDu4Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyH" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="r" org.eventb.core.type="RESOURCE"/>
+        <org.eventb.core.poIdentifier name="t" org.eventb.core.type="TITLES"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyH" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyH" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="r∈resource" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3f1L8K22EeuBUJAreJDu4Q|org.eventb.core.guard#_3f1L8622EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="t∈titles" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3f1L8K22EeuBUJAreJDu4Q|org.eventb.core.guard#_3f1zAK22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="getTitle(r)=t" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3f1L8K22EeuBUJAreJDu4Q|org.eventb.core.guard#_3f1zAa22EeuBUJAreJDu4Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyI" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="RESOURCE"/>
+        <org.eventb.core.poIdentifier name="i" org.eventb.core.type="ISBN"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyI" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyI" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="b∈book" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3f1zAq22EeuBUJAreJDu4Q|org.eventb.core.guard#_3f2aEq22EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="i∈isbn" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3f1zAq22EeuBUJAreJDu4Q|org.eventb.core.guard#_3f2aE622EeuBUJAreJDu4Q"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="getISBN(b)=i" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem1.bum|org.eventb.core.machineFile#OnlineLibrarySystem1|org.eventb.core.event#_3f1zAq22EeuBUJAreJDu4Q|org.eventb.core.guard#_3f3BIK22EeuBUJAreJDu4Q"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyJ" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="lists'" org.eventb.core.type="ℙ(LIST)"/>
+        <org.eventb.core.poIdentifier name="getCreator'" org.eventb.core.type="ℙ(LIST×USER)"/>
+        <org.eventb.core.poIdentifier name="lect" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="lis" org.eventb.core.type="LIST"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyJ" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyJ" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="lect∈lecturers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1Ykq4K2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YlR8K2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="lect∈loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1Ykq4K2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YlR8a2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="lis∈LIST" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1Ykq4K2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YlR8q2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="lis∉lists" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1Ykq4K2-EeuwufvKDCyVoA|org.eventb.core.guard#_1Yl5AK2-EeuwufvKDCyVoA"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyK" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="lists'" org.eventb.core.type="ℙ(LIST)"/>
+        <org.eventb.core.poIdentifier name="getCreator'" org.eventb.core.type="ℙ(LIST×USER)"/>
+        <org.eventb.core.poIdentifier name="lect" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="getResources'" org.eventb.core.type="ℙ(LIST×RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="lis" org.eventb.core.type="LIST"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyK" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyK" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="lect∈lecturers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YmgEa2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YnHIK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="lect∈loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YmgEa2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YnHIa2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="lis∈lists" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YmgEa2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YnHIq2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="getCreator(lis)=lect" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YmgEa2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YnuMK2-EeuwufvKDCyVoA"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyL" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="lect" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="getResources'" org.eventb.core.type="ℙ(LIST×RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="lis" org.eventb.core.type="LIST"/>
+        <org.eventb.core.poIdentifier name="res" org.eventb.core.type="RESOURCE"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyL" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyL" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="lect∈lecturers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YoVQq2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YpjYK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="lect∈loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YoVQq2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YpjYa2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="lis∈lists" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YoVQq2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YqKcK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="getCreator(lis)=lect" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YoVQq2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YqKca2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="res∈resource" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1YoVQq2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YqxgK2-EeuwufvKDCyVoA"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyM" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="lect" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="getResources'" org.eventb.core.type="ℙ(LIST×RESOURCE)"/>
+        <org.eventb.core.poIdentifier name="lis" org.eventb.core.type="LIST"/>
+        <org.eventb.core.poIdentifier name="res" org.eventb.core.type="RESOURCE"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyM" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyM" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="lect∈lecturers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1Yub4K2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YvC8a2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="lect∈loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1Yub4K2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YvC8q2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="lis∈lists" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1Yub4K2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YvC862-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="getCreator(lis)=lect" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1Yub4K2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YvC9K2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="res∈resource" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1Yub4K2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YvqAK2-EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="res∈{getResources(lis)}" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem2.bum|org.eventb.core.machineFile#OnlineLibrarySystem2|org.eventb.core.event#_1Yub4K2-EeuwufvKDCyVoA|org.eventb.core.guard#_1YvqAa2-EeuwufvKDCyVoA"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="BorrowBook/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTHYPOnlineLibrarySystemConteyN'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(getTotalTokens)∧getTotalTokens∈RESOURCE ⇸ ℤ∧b∈dom(getCurrentTokens)∧getCurrentTokens∈RESOURCE ⇸ ℤ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCME8q2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCMsAq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCME8q2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCMsAq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTHYPOnlineLibrarySystemConteyN'"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="BorrowBook/inv26/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyN"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getCurrentTokens{b ↦ getCurrentTokens(b)+1}∈book → ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXRK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCME8q2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXRK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#BorrowBook\/inv26\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="BorrowBook/inv27/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyN"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getBooks{u ↦ b}∈registeredUsers ↔ book" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-UK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCME8q2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-UK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#BorrowBook\/inv27\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="BorrowBook/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyN"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(getCurrentTokens)∧getCurrentTokens∈RESOURCE ⇸ ℤ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCME8q2_EeuwufvKDCyVoA|org.eventb.core.action#_OCNTEK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCME8q2_EeuwufvKDCyVoA|org.eventb.core.action#_OCNTEK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyN"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyN" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="getCurrentTokens'" org.eventb.core.type="ℙ(RESOURCE×ℤ)"/>
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="RESOURCE"/>
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="getBooks'" org.eventb.core.type="ℙ(USER×RESOURCE)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTHYPOnlineLibrarySystemConteyN'" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyN" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="b∈book" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCME8q2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCMsAa2_EeuwufvKDCyVoA"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyN" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTHYPOnlineLibrarySystemConteyN'" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="getTotalTokens(b)&gt;getCurrentTokens(b)" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCME8q2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCMsAq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="u∈registeredUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCME8q2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCMsA62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="u∈loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCME8q2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCMsBK2_EeuwufvKDCyVoA"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ReserveBook/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTHYPOnlineLibrarySystemConteyO'"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(getTotalTokens)∧getTotalTokens∈RESOURCE ⇸ ℤ∧b∈dom(getCurrentTokens)∧getCurrentTokens∈RESOURCE ⇸ ℤ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCNTEq2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCN6Ia2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCNTEq2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCN6Ia2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTHYPOnlineLibrarySystemConteyO'"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ReserveBook/inv28/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyO"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getReserves{b ↦ getReserves(b)+1}∈book ⤔ ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Ua2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCNTEq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Ua2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#ReserveBook\/inv28\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ReserveBook/inv29/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyO"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getStudent{getReserves(b) ↦ u}∈ℕ → registeredUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Uq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCNTEq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Uq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#ReserveBook\/inv29\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ReserveBook/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyO"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(getReserves)∧getReserves∈RESOURCE ⇸ ℤ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCNTEq2_EeuwufvKDCyVoA|org.eventb.core.action#_OCN6JK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCNTEq2_EeuwufvKDCyVoA|org.eventb.core.action#_OCN6JK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyO"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ReserveBook/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyO"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(getReserves)∧getReserves∈RESOURCE ⇸ ℤ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCNTEq2_EeuwufvKDCyVoA|org.eventb.core.action#_OCOhMK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCNTEq2_EeuwufvKDCyVoA|org.eventb.core.action#_OCOhMK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyO"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyO" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="RESOURCE"/>
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="getStudent'" org.eventb.core.type="ℙ(ℤ×USER)"/>
+        <org.eventb.core.poIdentifier name="getReserves'" org.eventb.core.type="ℙ(RESOURCE×ℤ)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTHYPOnlineLibrarySystemConteyO'" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyO" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="b∈book" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCNTEq2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCN6IK2_EeuwufvKDCyVoA"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyO" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTHYPOnlineLibrarySystemConteyO'" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="getTotalTokens(b)≤getCurrentTokens(b)" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCNTEq2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCN6Ia2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="u∈registeredUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCNTEq2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCN6Iq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="u∈loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCNTEq2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCN6I62_EeuwufvKDCyVoA"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="ReturnBook/inv26/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyP"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getCurrentTokens{b ↦ getCurrentTokens(b) − 1}∈book → ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXRK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCOhMa2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXRK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#ReturnBook\/inv26\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ReturnBook/inv27/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyP"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getBooks ∖ {u ↦ b}∈registeredUsers ↔ book" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-UK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCOhMa2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-UK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#ReturnBook\/inv27\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="ReturnBook/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyP"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(getCurrentTokens)∧getCurrentTokens∈RESOURCE ⇸ ℤ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCOhMa2_EeuwufvKDCyVoA|org.eventb.core.action#_OCPIQ62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCOhMa2_EeuwufvKDCyVoA|org.eventb.core.action#_OCPIQ62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyP"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="getCurrentTokens'" org.eventb.core.type="ℙ(RESOURCE×ℤ)"/>
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="RESOURCE"/>
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="getBooks'" org.eventb.core.type="ℙ(USER×RESOURCE)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="b∈book" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCOhMa2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCOhNK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="u∈registeredUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCOhMa2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCPIQK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="u∈loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCOhMa2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCPIQa2_EeuwufvKDCyVoA"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="RevokeBook/inv28/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyQ"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getReserves{b ↦ getReserves(b)+1}∈book ⤔ ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Ua2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCPIRK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Ua2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#RevokeBook\/inv28\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="RevokeBook/inv29/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyQ"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="getStudent{getReserves(b) ↦ u}∈ℕ → registeredUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Uq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCPIRK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Uq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poSequent#RevokeBook\/inv29\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="RevokeBook/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyQ"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(getReserves)∧getReserves∈RESOURCE ⇸ ℤ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCPIRK2_EeuwufvKDCyVoA|org.eventb.core.action#_OCQWYq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCPIRK2_EeuwufvKDCyVoA|org.eventb.core.action#_OCQWYq2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyQ"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poSequent name="RevokeBook/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyQ"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="b∈dom(getReserves)∧getReserves∈RESOURCE ⇸ ℤ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCPIRK2_EeuwufvKDCyVoA|org.eventb.core.action#_OCQWY62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCPIRK2_EeuwufvKDCyVoA|org.eventb.core.action#_OCQWY62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTALLHYPOnlineLibrarySystemConteyQ"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTOnlineLibrarySystemConteyQ" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="RESOURCE"/>
+        <org.eventb.core.poIdentifier name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.poIdentifier name="getStudent'" org.eventb.core.type="ℙ(ℤ×USER)"/>
+        <org.eventb.core.poIdentifier name="getReserves'" org.eventb.core.type="ℙ(RESOURCE×ℤ)"/>
+        <org.eventb.core.poIdentifier name="a" org.eventb.core.type="USER"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPOnlineLibrarySystemConteyQ" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#EVTIDENTOnlineLibrarySystemConteyQ" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="b∈book" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCPIRK2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCPvU62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="a∈administrators" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCPIRK2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCPvVK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="u∈registeredUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCPIRK2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCQWYK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="a∈loggedInUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.event#_OCPIRK2_EeuwufvKDCyVoA|org.eventb.core.guard#_OCQWYa2_EeuwufvKDCyVoA"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/OnlineLibrarySystem/OnlineLibrarySystem3.bpo|org.eventb.core.poFile#OnlineLibrarySystem3|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="6">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="getTotalTokens∈book → ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXQ62_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="getCurrentTokens∈book → ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCFXRK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="getBooks∈registeredUsers ↔ book" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-UK2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="getReserves∈book ⤔ ℕ" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Ua2_EeuwufvKDCyVoA"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="getStudent∈ℕ → registeredUsers" org.eventb.core.source="/OnlineLibrarySystem/OnlineLibrarySystem3.bum|org.eventb.core.machineFile#OnlineLibrarySystem3|org.eventb.core.invariant#_OCF-Uq2_EeuwufvKDCyVoA"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

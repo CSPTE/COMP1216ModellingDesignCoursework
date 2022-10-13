@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/inv25/INV"/>
+    <org.eventb.core.prProof name="INITIALISATION/inv26/INV"/>
+    <org.eventb.core.prProof name="INITIALISATION/inv27/INV"/>
+    <org.eventb.core.prProof name="INITIALISATION/inv28/INV"/>
+    <org.eventb.core.prProof name="INITIALISATION/inv29/INV"/>
+    <org.eventb.core.prProof name="RegisterUser/inv27/INV"/>
+    <org.eventb.core.prProof name="RegisterUser/inv29/INV"/>
+    <org.eventb.core.prProof name="CreateBook/inv25/INV"/>
+    <org.eventb.core.prProof name="CreateBook/inv26/INV"/>
+    <org.eventb.core.prProof name="CreateBook/inv27/INV"/>
+    <org.eventb.core.prProof name="CreateBook/inv28/INV"/>
+    <org.eventb.core.prProof name="RemoveBook/inv25/INV"/>
+    <org.eventb.core.prProof name="RemoveBook/inv26/INV"/>
+    <org.eventb.core.prProof name="RemoveBook/inv27/INV"/>
+    <org.eventb.core.prProof name="RemoveBook/inv28/INV"/>
+</org.eventb.core.prFile>

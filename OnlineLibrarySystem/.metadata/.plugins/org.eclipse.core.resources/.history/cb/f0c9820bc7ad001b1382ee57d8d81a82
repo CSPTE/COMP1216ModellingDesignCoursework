@@ -1,0 +1,93 @@
+machine OnlineLibrarySystem3
+refines OnlineLibrarySystem2
+sees OnlineLibrarySystemContext ResourceContext ReadingListContext
+variables
+	registeredUsers
+	administrators
+	lecturers
+	loggedInUsers
+	loggingPassword
+	resource
+	book
+	article
+	website
+	authors
+	urls
+	titles
+	getAuthor
+	getURL
+	getTitle
+	publisher
+	publishedYear
+	isbn
+	getPublisher
+	getPublishedYear
+	getISBN
+	lists
+	getResources
+	getCreator
+	
+	getTotalTokens
+	getCurrentTokens
+	getBooks
+	getReserves
+	getStudent
+events
+	event INITIALISATION extends INITIALISATION
+	end
+
+	event LogIn extends LogIn
+	end
+
+	event LogOut extends LogOut
+	end
+
+	event RegisterUser extends RegisterUser
+	end
+
+	event ChangePassword extends ChangePassword
+	end
+
+	event ChangeToAdministrator extends ChangeToAdministrator
+	end
+
+	event ChangeToLecturer extends ChangeToLecturer
+	end
+
+	event CreateBook extends CreateBook
+	end
+
+	event RemoveBook extends RemoveBook
+	end
+
+	event CreateWebsite extends CreateWebsite
+	end
+
+	event CreateArticle extends CreateArticle
+	end
+
+	event RemoveWebsite extends RemoveWebsite
+	end
+
+	event RemoveArticle extends RemoveArticle
+	end
+
+	event SearchByTitle extends SearchByTitle
+	end
+
+	event SearchByISBN extends SearchByISBN
+	end
+
+	event CreateReadingList extends CreateReadingList
+	end
+
+	event RemoveReadingList extends RemoveReadingList
+	end
+
+	event AddResourceToList extends AddResourceToList
+	end
+
+	event RemoveResourceFromList extends RemoveResourceFromList
+	end
+
+end

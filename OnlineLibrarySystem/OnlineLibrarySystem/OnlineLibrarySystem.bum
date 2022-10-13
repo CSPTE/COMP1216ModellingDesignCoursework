@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd;ac.soton.xeventb.xmachine.base" org.eventb.core.generated="false" version="5">
+    <org.eventb.core.seesContext name="_6SONEK5QEeu6SMWDX9z-VA" org.eventb.core.target="OnlineLibrarySystemContext"/>
+    <org.eventb.core.variable name="_6SO0IK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="registeredUsers"/>
+    <org.eventb.core.variable name="_6SPbMK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="administrators"/>
+    <org.eventb.core.variable name="_6SPbMa5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="lecturers"/>
+    <org.eventb.core.variable name="_6SQCQK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="loggedInUsers"/>
+    <org.eventb.core.variable name="_6SQCQa5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="loggingPassword"/>
+    <org.eventb.core.invariant name="_6SQpUK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="inv1" org.eventb.core.predicate="registeredUsers ⊆ USER"/>
+    <org.eventb.core.invariant name="_6SRQYK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="inv2" org.eventb.core.predicate="administrators ⊆ registeredUsers"/>
+    <org.eventb.core.invariant name="_6SRQYa5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="inv3" org.eventb.core.predicate="lecturers ⊆ registeredUsers"/>
+    <org.eventb.core.invariant name="_6SR3cK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="inv4" org.eventb.core.predicate="administrators ∩ lecturers = ∅"/>
+    <org.eventb.core.invariant name="_6SSegK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="inv5" org.eventb.core.predicate="rootUser ∈ administrators"/>
+    <org.eventb.core.invariant name="_6STFkK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="inv6" org.eventb.core.predicate="loggingPassword ∈ registeredUsers → PASSWORD"/>
+    <org.eventb.core.invariant name="_6STsoK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="inv7" org.eventb.core.predicate="loggedInUsers ⊆ registeredUsers"/>
+    <org.eventb.core.event name="_6SUTsK5QEeu6SMWDX9z-VA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="_6SUTsa5QEeu6SMWDX9z-VA" org.eventb.core.assignment="registeredUsers ≔ ∅ ∪ {rootUser}" org.eventb.core.generated="false" org.eventb.core.label="beg1"/>
+        <org.eventb.core.action name="_6SU6wK5QEeu6SMWDX9z-VA" org.eventb.core.assignment="administrators ≔ ∅ ∪ {rootUser}" org.eventb.core.generated="false" org.eventb.core.label="beg2"/>
+        <org.eventb.core.action name="_6SVh0K5QEeu6SMWDX9z-VA" org.eventb.core.assignment="lecturers ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="beg3"/>
+        <org.eventb.core.action name="_6SVh0a5QEeu6SMWDX9z-VA" org.eventb.core.assignment="loggedInUsers ≔ ∅" org.eventb.core.generated="false" org.eventb.core.label="beg4"/>
+        <org.eventb.core.action name="_6SWI4K5QEeu6SMWDX9z-VA" org.eventb.core.assignment="loggingPassword ≔ ∅ ∪ {rootUser ↦ defaultPassword}" org.eventb.core.generated="false" org.eventb.core.label="beg5"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_6SWv8K5QEeu6SMWDX9z-VA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="LogIn">
+        <org.eventb.core.parameter name="_6SXXAK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="u"/>
+        <org.eventb.core.parameter name="_6SXXAa5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="p"/>
+        <org.eventb.core.guard name="_6SX-EK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="u ∈ registeredUsers"/>
+        <org.eventb.core.guard name="_6SYlIK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="p ∈ PASSWORD"/>
+        <org.eventb.core.guard name="_6SZMMK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="grd3" org.eventb.core.predicate="loggingPassword(u) = p"/>
+        <org.eventb.core.action name="_6SZMMa5QEeu6SMWDX9z-VA" org.eventb.core.assignment="loggedInUsers ≔ loggedInUsers ∪ {u}" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_6SZzQK5QEeu6SMWDX9z-VA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="LogOut">
+        <org.eventb.core.parameter name="_6SaaUK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="u"/>
+        <org.eventb.core.guard name="_6SddoK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="u ∈ loggedInUsers"/>
+        <org.eventb.core.action name="_6SeEsK5QEeu6SMWDX9z-VA" org.eventb.core.assignment="loggedInUsers ≔ loggedInUsers ∖ {u}" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_6SerwK5QEeu6SMWDX9z-VA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="RegisterUser">
+        <org.eventb.core.parameter name="_6SfS0K5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="a"/>
+        <org.eventb.core.parameter name="_6Sf54K5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="u"/>
+        <org.eventb.core.parameter name="_6Sf54a5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="p"/>
+        <org.eventb.core.guard name="_6Sf54q5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="u ∉ registeredUsers"/>
+        <org.eventb.core.guard name="_6Sgg8K5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="u ∈ USER"/>
+        <org.eventb.core.guard name="_6Sgg8a5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="grd3" org.eventb.core.predicate="a ∈ administrators"/>
+        <org.eventb.core.guard name="_6ShIAK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="grd4" org.eventb.core.predicate="p ∈ PASSWORD"/>
+        <org.eventb.core.action name="_6ShIAa5QEeu6SMWDX9z-VA" org.eventb.core.assignment="registeredUsers ≔ registeredUsers ∪ {u}" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="_6ShvEK5QEeu6SMWDX9z-VA" org.eventb.core.assignment="loggingPassword(u) ≔ p" org.eventb.core.generated="false" org.eventb.core.label="act3"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_6ShvEa5QEeu6SMWDX9z-VA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="ChangePassword">
+        <org.eventb.core.parameter name="_6SiWIK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="u"/>
+        <org.eventb.core.parameter name="_6SiWIa5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="p"/>
+        <org.eventb.core.guard name="_6SiWIq5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="u ∈ loggedInUsers"/>
+        <org.eventb.core.guard name="_6Si9MK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="p ∈ PASSWORD"/>
+        <org.eventb.core.action name="_6Si9Ma5QEeu6SMWDX9z-VA" org.eventb.core.assignment="loggingPassword(u) ≔ p" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_6SjkQK5QEeu6SMWDX9z-VA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="ChangeToAdministrator">
+        <org.eventb.core.parameter name="_6SjkQa5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="a"/>
+        <org.eventb.core.parameter name="_6SjkQq5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="u"/>
+        <org.eventb.core.guard name="_6SkLUK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ administrators"/>
+        <org.eventb.core.guard name="_6SkLUa5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="u ∈ registeredUsers ∖ (lecturers ∪ administrators)"/>
+        <org.eventb.core.action name="_6SkLUq5QEeu6SMWDX9z-VA" org.eventb.core.assignment="administrators ≔ administrators ∪ {u}" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="_6SkyYK5QEeu6SMWDX9z-VA" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.generated="false" org.eventb.core.label="ChangeToLecturer">
+        <org.eventb.core.parameter name="_6SkyYa5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="a"/>
+        <org.eventb.core.parameter name="_6SkyYq5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.identifier="u"/>
+        <org.eventb.core.guard name="_6SlZcK5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ administrators"/>
+        <org.eventb.core.guard name="_6SlZca5QEeu6SMWDX9z-VA" org.eventb.core.generated="false" org.eventb.core.label="grd2" org.eventb.core.predicate="u ∈ registeredUsers ∖ (administrators ∪lecturers)"/>
+        <org.eventb.core.action name="_6SlZcq5QEeu6SMWDX9z-VA" org.eventb.core.assignment="lecturers ≔ lecturers ∪ {u}" org.eventb.core.generated="false" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

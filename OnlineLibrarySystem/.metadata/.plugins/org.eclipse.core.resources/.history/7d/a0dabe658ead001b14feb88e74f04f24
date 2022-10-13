@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;ac.soton.xeventb.xcontext.base">
+    <org.eventb.core.scCarrierSet name="AUTHORS" org.eventb.core.source="/OnlineLibrarySystem/ResourceContext.buc|org.eventb.core.contextFile#ResourceContext|org.eventb.core.carrierSet#_AyrGkK2GEeuBUJAreJDu4Q" org.eventb.core.type="ℙ(AUTHORS)"/>
+    <org.eventb.core.scCarrierSet name="URLS" org.eventb.core.source="/OnlineLibrarySystem/ResourceContext.buc|org.eventb.core.contextFile#ResourceContext|org.eventb.core.carrierSet#_Ayqfga2GEeuBUJAreJDu4Q" org.eventb.core.type="ℙ(URLS)"/>
+    <org.eventb.core.scCarrierSet name="PUBLISHED_YEAR" org.eventb.core.source="/OnlineLibrarySystem/ResourceContext.buc|org.eventb.core.contextFile#ResourceContext|org.eventb.core.carrierSet#_Ayrtoa2GEeuBUJAreJDu4Q" org.eventb.core.type="ℙ(PUBLISHED_YEAR)"/>
+    <org.eventb.core.scCarrierSet name="PUBLISHER" org.eventb.core.source="/OnlineLibrarySystem/ResourceContext.buc|org.eventb.core.contextFile#ResourceContext|org.eventb.core.carrierSet#_AyrtoK2GEeuBUJAreJDu4Q" org.eventb.core.type="ℙ(PUBLISHER)"/>
+    <org.eventb.core.scCarrierSet name="RESOURCE" org.eventb.core.source="/OnlineLibrarySystem/ResourceContext.buc|org.eventb.core.contextFile#ResourceContext|org.eventb.core.carrierSet#_Ayp4cK2GEeuBUJAreJDu4Q" org.eventb.core.type="ℙ(RESOURCE)"/>
+    <org.eventb.core.scCarrierSet name="TITLES" org.eventb.core.source="/OnlineLibrarySystem/ResourceContext.buc|org.eventb.core.contextFile#ResourceContext|org.eventb.core.carrierSet#_AyqfgK2GEeuBUJAreJDu4Q" org.eventb.core.type="ℙ(TITLES)"/>
+    <org.eventb.core.scCarrierSet name="ISBN" org.eventb.core.source="/OnlineLibrarySystem/ResourceContext.buc|org.eventb.core.contextFile#ResourceContext|org.eventb.core.carrierSet#_AyrGka2GEeuBUJAreJDu4Q" org.eventb.core.type="ℙ(ISBN)"/>
+</org.eventb.core.scContextFile>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<index_root>
+<pim project="/OnlineLibrarySystem">
+<rodin_index>
+<descriptor element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.variable#_eOgdoaD9EeuJ6rgcaWllTQ" name="administrators">
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_eOhrwKD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="14" loc_char_start="0"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOiS0aD9EeuJ6rgcaWllTQ|org.eventb.core.action#_eOi54KD9EeuJ6rgcaWllTQ" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="14" loc_char_start="0"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.variable#_eOgdoaD9EeuJ6rgcaWllTQ" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_eOhrwqD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="14" loc_char_start="0"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_eOiS0KD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="25" loc_char_start="11"/>
+</descriptor>
+<descriptor element="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc|org.eventb.core.contextFile#OnlineLibrarySystemContext|org.eventb.core.carrierSet#_AcFMIaD8EeuJ6rgcaWllTQ" name="RESOURCE">
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc|org.eventb.core.contextFile#OnlineLibrarySystemContext|org.eventb.core.carrierSet#_AcFMIaD8EeuJ6rgcaWllTQ" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.variable#_eOhEsKD9EeuJ6rgcaWllTQ" name="rootUser">
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOiS0aD9EeuJ6rgcaWllTQ|org.eventb.core.action#_eOiS0qD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="27" loc_char_start="19"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOiS0aD9EeuJ6rgcaWllTQ|org.eventb.core.action#_eOi54KD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="26" loc_char_start="18"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_eOiS0KD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="8" loc_char_start="0"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.variable#_eOhEsKD9EeuJ6rgcaWllTQ" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOi54qD9EeuJ6rgcaWllTQ" name="RegisterUser">
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOi54qD9EeuJ6rgcaWllTQ" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc|org.eventb.core.contextFile#OnlineLibrarySystemContext" name="OnlineLibrarySystemContext">
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.seesContext#_eOf2kKD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.target"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc|org.eventb.core.contextFile#OnlineLibrarySystemContext" kind="org.eventb.core.declaration"/>
+</descriptor>
+<descriptor element="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc|org.eventb.core.contextFile#OnlineLibrarySystemContext|org.eventb.core.carrierSet#_AcFMIKD8EeuJ6rgcaWllTQ" name="USER">
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOi54qD9EeuJ6rgcaWllTQ|org.eventb.core.guard#_eOjg8aD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="8" loc_char_start="4"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_eOhEsaD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="22" loc_char_start="18"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc|org.eventb.core.contextFile#OnlineLibrarySystemContext|org.eventb.core.carrierSet#_AcFMIKD8EeuJ6rgcaWllTQ" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+</descriptor>
+<descriptor element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.variable#_eOgdoKD9EeuJ6rgcaWllTQ" name="registeredUsers">
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOi54qD9EeuJ6rgcaWllTQ|org.eventb.core.action#_eOjg8qD9EeuJ6rgcaWllTQ" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="15" loc_char_start="0"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.variable#_eOgdoKD9EeuJ6rgcaWllTQ" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_eOhrwKD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="32" loc_char_start="17"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOi54qD9EeuJ6rgcaWllTQ|org.eventb.core.guard#_eOjg8KD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="19" loc_char_start="4"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_eOhrwaD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="27" loc_char_start="12"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOiS0aD9EeuJ6rgcaWllTQ|org.eventb.core.action#_eOiS0qD9EeuJ6rgcaWllTQ" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="15" loc_char_start="0"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_eOhEsaD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="15" loc_char_start="0"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOi54qD9EeuJ6rgcaWllTQ|org.eventb.core.action#_eOjg8qD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="33" loc_char_start="18"/>
+</descriptor>
+<descriptor element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOiS0aD9EeuJ6rgcaWllTQ" name="INITIALISATION">
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOiS0aD9EeuJ6rgcaWllTQ" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.label"/>
+</descriptor>
+<descriptor element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem" name="OnlineLibrarySystem">
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem" kind="org.eventb.core.declaration"/>
+</descriptor>
+<descriptor element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOi54qD9EeuJ6rgcaWllTQ|org.eventb.core.parameter#_eOi546D9EeuJ6rgcaWllTQ" name="u">
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOi54qD9EeuJ6rgcaWllTQ|org.eventb.core.action#_eOjg8qD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.assignment" loc_char_end="38" loc_char_start="37"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOi54qD9EeuJ6rgcaWllTQ|org.eventb.core.parameter#_eOi546D9EeuJ6rgcaWllTQ" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOi54qD9EeuJ6rgcaWllTQ|org.eventb.core.guard#_eOjg8KD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOi54qD9EeuJ6rgcaWllTQ|org.eventb.core.guard#_eOjg8aD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="1" loc_char_start="0"/>
+</descriptor>
+<descriptor element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.variable#_eOgdoqD9EeuJ6rgcaWllTQ" name="lecturers">
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_eOhrwqD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="26" loc_char_start="17"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOiS0aD9EeuJ6rgcaWllTQ|org.eventb.core.action#_eOi54aD9EeuJ6rgcaWllTQ" kind="org.eventb.core.modification" loc_attribute="org.eventb.core.assignment" loc_char_end="9" loc_char_start="0"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.variable#_eOgdoqD9EeuJ6rgcaWllTQ" kind="org.eventb.core.declaration" loc_attribute="org.eventb.core.identifier"/>
+<occurrence element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.invariant#_eOhrwaD9EeuJ6rgcaWllTQ" kind="org.eventb.core.reference" loc_attribute="org.eventb.core.predicate" loc_char_end="9" loc_char_start="0"/>
+</descriptor>
+</rodin_index>
+<export_table>
+<export file="/OnlineLibrarySystem/OnlineLibrarySystem.bum">
+<exported element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.variable#_eOgdoaD9EeuJ6rgcaWllTQ" name="administrators"/>
+<exported element="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc|org.eventb.core.contextFile#OnlineLibrarySystemContext|org.eventb.core.carrierSet#_AcFMIaD8EeuJ6rgcaWllTQ" name="RESOURCE"/>
+<exported element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.variable#_eOgdoKD9EeuJ6rgcaWllTQ" name="registeredUsers"/>
+<exported element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOi54qD9EeuJ6rgcaWllTQ" name="RegisterUser"/>
+<exported element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.variable#_eOgdoqD9EeuJ6rgcaWllTQ" name="lecturers"/>
+<exported element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOiS0aD9EeuJ6rgcaWllTQ" name="INITIALISATION"/>
+<exported element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.variable#_eOhEsKD9EeuJ6rgcaWllTQ" name="rootUser"/>
+<exported element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem|org.eventb.core.event#_eOi54qD9EeuJ6rgcaWllTQ|org.eventb.core.parameter#_eOi546D9EeuJ6rgcaWllTQ" name="u"/>
+<exported element="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc|org.eventb.core.contextFile#OnlineLibrarySystemContext|org.eventb.core.carrierSet#_AcFMIKD8EeuJ6rgcaWllTQ" name="USER"/>
+<exported element="/OnlineLibrarySystem/OnlineLibrarySystem.bum|org.eventb.core.machineFile#OnlineLibrarySystem" name="OnlineLibrarySystem"/>
+<exported element="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc|org.eventb.core.contextFile#OnlineLibrarySystemContext" name="OnlineLibrarySystemContext"/>
+</export>
+<export file="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc">
+<exported element="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc|org.eventb.core.contextFile#OnlineLibrarySystemContext|org.eventb.core.carrierSet#_AcFMIaD8EeuJ6rgcaWllTQ" name="RESOURCE"/>
+<exported element="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc|org.eventb.core.contextFile#OnlineLibrarySystemContext|org.eventb.core.carrierSet#_AcFMIKD8EeuJ6rgcaWllTQ" name="USER"/>
+<exported element="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc|org.eventb.core.contextFile#OnlineLibrarySystemContext" name="OnlineLibrarySystemContext"/>
+</export>
+</export_table>
+<graph is_sorted="true">
+<node label="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc" mark="false" order_pos="0"/>
+<node label="/OnlineLibrarySystem/OnlineLibrarySystem.bum" mark="false" order_pos="1">
+<predecessor label="/OnlineLibrarySystem/OnlineLibrarySystemContext.buc"/>
+</node>
+</graph>
+<unprocessed file="/OnlineLibrarySystem/OnlineLibrarySystemContext.bcc"/>
+<unprocessed file="/OnlineLibrarySystem/OnlineLibrarySystemContext.bpo"/>
+<unprocessed file="/OnlineLibrarySystem/OnlineLibrarySystemContext.bpr"/>
+<unprocessed file="/OnlineLibrarySystem/OnlineLibrarySystemContext.bps"/>
+<unprocessed file="/OnlineLibrarySystem/OnlineLibrarySystem.bcm"/>
+<unprocessed file="/OnlineLibrarySystem/OnlineLibrarySystem.bpo"/>
+<unprocessed file="/OnlineLibrarySystem/OnlineLibrarySystem.bpr"/>
+<unprocessed file="/OnlineLibrarySystem/OnlineLibrarySystem.bps"/>
+</pim>
+<delta_list/>
+<indexer_registry>
+<registry_entry element_type="org.eventb.core.machineFile">
+<indexer id="machineIndexer"/>
+</registry_entry>
+<registry_entry element_type="org.eventb.core.contextFile">
+<indexer id="contextIndexer"/>
+</registry_entry>
+</indexer_registry>
+</index_root>

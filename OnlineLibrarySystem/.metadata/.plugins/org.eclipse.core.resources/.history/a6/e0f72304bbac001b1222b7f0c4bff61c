@@ -1,0 +1,137 @@
+machine OnlineLibrarySystem1
+refines OnlineLibrarySystem
+sees OnlineLibrarySystemContext ResourceContext
+variables
+	registeredUsers
+	administrators
+	lecturers
+	loggedInUsers
+	loggingPassword
+	
+	resource
+	book
+	article
+	website
+	authors
+	urls
+	titles
+	getAuthor
+	getURL
+	getTitle
+	publisher
+	publishedYear
+	isbn
+	getPublisher
+	getPublishedYear
+	getISBN
+invariants
+    @inv8:resource ⊆ RESOURCE
+	@inv9:partition(resource, book, website, article)
+	@inv10:authors ⊆ AUTHORS
+	@inv11:titles ⊆ TITLES
+	@inv12:urls ⊆ URLS
+	@inv13:getAuthor ∈ resource ↔ authors //Problem here <<-> needed but error blyat
+	@inv14:getURL ∈ resource ⤖ urls
+	@inv15:getTitle ∈ resource ⤖ titles
+	@inv16:isbn ⊆ ISBN
+	@inv17:publisher ⊆ PUBLISHER
+	@inv18:publishedYear ⊆ PUBLISHED_YEAR
+	@inv19:getPublisher ∈ (resource ∖ (website)) → publisher
+	@inv20:getISBN ∈ book ⤖ isbn
+	@inv21:getPublishedYear ∈ (resource ∖ (website)) → publishedYear
+events
+	event INITIALISATION extends INITIALISATION
+	begin
+	@beg6:resource ≔ ∅
+	@beg7:book ≔ ∅
+	@beg8:article ≔ ∅
+	@beg9:website ≔ ∅
+	@beg10:authors ≔ ∅
+	@beg11:urls ≔ ∅
+	@beg12:titles ≔ ∅
+	@beg13:getAuthor ≔ ∅
+	@beg14:getURL ≔ ∅
+	@beg15:getTitle ≔ ∅
+	@beg16:publisher ≔ ∅
+	@beg17:publishedYear ≔ ∅
+	@beg18:isbn ≔ ∅
+	@beg19:getPublisher ≔ ∅
+	@beg20:getPublishedYear ≔ ∅
+	@beg21:getISBN ≔ ∅
+	end
+
+	event LogIn extends LogIn
+	end
+
+	event LogOut extends LogOut
+	end
+
+	event RegisterUser extends RegisterUser
+	end
+
+	event ChangePassword extends ChangePassword
+	end
+
+	event ChangeToAdministrator extends ChangeToAdministrator
+	end
+
+	event ChangeToLecturer extends ChangeToLecturer
+	end
+	
+	event CreateBook
+    any a b publish publishedY tit ur is auth where
+        @grd1:a ∈ administrators
+        @grd2:a ∈ loggedInUsers
+        @grd3:b ∈ RESOURCE
+        @grd4:b ∉ resource
+        @grd4a:b ∉ book
+        @grd5:is ∈ ISBN
+        @grd5a:is ∉ isbn
+        @grd6:publishedY ∈ PUBLISHED_YEAR
+        @grd7:publish ∈ PUBLISHER
+        @grd8:auth ∈ AUTHORS
+        @grd9:ur ∈ URLS
+        @grd9a: ur ∉ urls
+        @grd10:tit ∈ TITLES
+        @grd10a:tit ∉ titles
+    then
+        @act0:resource ≔ resource ∪ {b}
+        @act1:book ≔ book ∪ {b}
+        @act2:isbn ≔ isbn ∪ {is}
+        @act3:publishedYear ≔ publishedYear ∪ {publishedY}
+        @act4:publisher ≔ publisher ∪ {publish}
+        @act5:authors ≔ authors ∪ {auth}
+        @act6:urls ≔ urls ∪ {ur}
+        @act7:titles ≔ titles ∪ {tit}
+
+        @act8: getISBN(b) ≔ is
+        @act9: getPublishedYear(b) ≔ publishedY
+        @act10: getPublisher(b) ≔ publish
+        @act11: getAuthor(b) ≔ auth
+        @act12: getURL(b) ≔ ur
+        @act13: getTitle(b) ≔ tit
+    end
+    event RemoveBook 
+    any b a where
+        @grd1: a ∈ administrators
+        @grd2: a ∈ loggedInUsers
+        @grd3: b ∈ resource
+        @grd4: b ∈ book
+    then
+        @act9:getISBN ≔ {b} ⩤ getISBN
+        @act10:getTitle ≔ {b} ⩤ getTitle
+        //@act11:getAuthor ≔ {b} ⩤ getAuthor
+        //@act12:getPublisher ≔ {b} ⩤ getPublisher
+        //@act13:getPublishedYear ≔ {b} ⩤ getPublishedYear
+        @act14:getURL ≔ {b} ⩤ getURL
+        
+        @act1: book ≔ book ∖ {b}
+        @act2: resource ≔ resource ∖ {b}
+        @act3: isbn ≔ isbn ∖ {getISBN(b)}
+        @act4: titles ≔ titles ∖ {getTitle(b)}
+        @act5: authors ≔ authors ∖ {getAuthor(b)}
+        @act6: publisher ≔ publisher ∖ {getPublisher(b)}
+        @act7: publishedYear ≔ publishedYear ∖ {getPublishedYear(b)}
+        @act8: urls ≔ urls ∖ {getURL(b)}
+    end
+end

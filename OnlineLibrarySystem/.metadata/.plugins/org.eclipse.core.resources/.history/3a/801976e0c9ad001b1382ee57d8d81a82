@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;ac.soton.xeventb.xcontext.base">
+    <org.eventb.core.scCarrierSet name="POSITION" org.eventb.core.source="/OnlineLibrarySystem/BorrowingContext.buc|org.eventb.core.contextFile#BorrowingContext|org.eventb.core.carrierSet#_fq8Zca3BEeuwufvKDCyVoA" org.eventb.core.type="ℙ(POSITION)"/>
+    <org.eventb.core.scCarrierSet name="QUEUE" org.eventb.core.source="/OnlineLibrarySystem/BorrowingContext.buc|org.eventb.core.contextFile#BorrowingContext|org.eventb.core.carrierSet#_fq8ZcK3BEeuwufvKDCyVoA" org.eventb.core.type="ℙ(QUEUE)"/>
+</org.eventb.core.scContextFile>

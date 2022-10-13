@@ -1,0 +1,77 @@
+machine OnlineLibrarySystem
+sees OnlineLibrarySystemContext
+variables 
+    registeredUsers//Set of registered users
+    administrators//Set of administrators
+    lecturers
+    loggedInUsers
+    loggingPassword
+invariants
+    @inv1: registeredUsers ⊆ USER
+    @inv2: administrators ⊆ registeredUsers
+    @inv3: lecturers ⊆ registeredUsers
+    @inv4: administrators ∩ lecturers = ∅
+    @inv5: rootUser ∈ administrators
+    @inv6: loggingPassword ∈ registeredUsers → PASSWORD
+    @inv7: loggedInUsers ⊆ registeredUsers
+events
+
+event INITIALISATION
+begin
+    @beg1:registeredUsers ≔ ∅ ∪ {rootUser}
+    @beg2:administrators ≔ ∅ ∪ {rootUser}
+    @beg3:lecturers ≔ ∅
+    @beg4:loggedInUsers ≔ ∅
+    @beg5:loggingPassword ≔ ∅ ∪ {rootUser ↦ defaultPassword}
+end
+event LogIn
+any u p where
+    @grd1:u ∈ registeredUsers
+    @grd2: p ∈ PASSWORD
+    @grd3:loggingPassword(u) = p
+then
+    @act1:loggedInUsers ≔ loggedInUsers ∪ {u}
+end
+event LogOut
+any u where
+    @grd1:u ∈ loggedInUsers
+then
+    @act1:loggedInUsers ≔ loggedInUsers ∖ {u}
+end
+event RegisterUser
+any a u p where
+    // Event guards go here. Each guard is of the form @label: predicate
+    @grd1: u ∉ registeredUsers
+    @grd2: u ∈ USER
+    @grd3: a ∈ administrators
+    @grd4: p ∈ PASSWORD
+then
+    // Event actions go here. Each action is of the form @label: assignment
+    @act1: registeredUsers ≔ registeredUsers ∪ {u}
+    @act3: loggingPassword(u) ≔ p
+end
+event ChangePassword
+any u p where
+    @grd1: u ∈ loggedInUsers
+    @grd2: p ∈ PASSWORD
+then
+    @act1: loggingPassword(u) ≔ p
+end
+
+event ChangeToAdministrator
+    any a u where
+        @grd1: a ∈ administrators
+        @grd2: u ∈ registeredUsers ∖ (lecturers ∪ administrators)
+    then
+        @act1: administrators ≔ administrators ∪ {u}
+    end
+    
+event ChangeToLecturer
+    any a u where
+        @grd1: a ∈ administrators
+        @grd2: u ∈ registeredUsers ∖ (administrators ∪lecturers)
+    then
+        @act1: lecturers ≔ lecturers ∪ {u}
+    end    
+
+end

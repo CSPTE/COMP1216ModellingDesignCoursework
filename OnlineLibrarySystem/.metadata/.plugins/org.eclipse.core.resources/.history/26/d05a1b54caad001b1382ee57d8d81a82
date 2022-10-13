@@ -1,0 +1,155 @@
+machine OnlineLibrarySystem3
+refines OnlineLibrarySystem2
+sees OnlineLibrarySystemContext ResourceContext ReadingListContext BorrowingContext
+variables
+	registeredUsers
+	administrators
+	lecturers
+	loggedInUsers
+	loggingPassword
+	
+	resource
+	book
+	article
+	website
+	authors
+	urls
+	titles
+	getAuthor
+	getURL
+	getTitle
+	publisher
+	publishedYear
+	isbn
+	getPublisher
+	getPublishedYear
+	getISBN
+	lists
+	getResources
+	getCreator
+	
+	getTotalTokens
+	getCurrentTokens
+	getBooks
+	getReserves
+	getStudent
+	
+	queue
+	position
+	invariants
+	@inv25:getTotalTokens ∈ book → ℕ
+	@inv26:getCurrentTokens ∈ book → ℕ
+	@inv27:getBooks ∈ registeredUsers ↔ book
+	@inv28:getReserves ∈ book ⤔ ℕ
+	@inv29:getStudent ∈ ℕ ⇸ registeredUsers
+	@inv30:queue ⊆ QUEUE
+	@inv31:position ∈ book ↣ ℕ
+events
+	event INITIALISATION extends INITIALISATION
+	begin
+	@beg25:getTotalTokens ≔ ∅
+	@beg26:getCurrentTokens ≔ ∅
+	@beg27:getBooks ≔ ∅
+	@beg28:getReserves ≔ ∅
+	@beg29:getStudent ≔ ∅
+	@beg30:queue ≔ ∅
+	end
+
+	event LogIn extends LogIn
+	end
+
+	event LogOut extends LogOut
+	end
+
+	event RegisterUser extends RegisterUser
+	end
+
+	event ChangePassword extends ChangePassword
+	end
+
+	event ChangeToAdministrator extends ChangeToAdministrator
+	end
+
+	event ChangeToLecturer extends ChangeToLecturer
+	end
+
+	event CreateBook extends CreateBook
+	end
+
+	event RemoveBook extends RemoveBook
+	end
+
+	event CreateWebsite extends CreateWebsite
+	end
+
+	event CreateArticle extends CreateArticle
+	end
+
+	event RemoveWebsite extends RemoveWebsite
+	end
+
+	event RemoveArticle extends RemoveArticle
+	end
+
+	event SearchByTitle extends SearchByTitle
+	end
+
+	event SearchByISBN extends SearchByISBN
+	end
+
+	event CreateReadingList extends CreateReadingList
+	end
+
+	event RemoveReadingList extends RemoveReadingList
+	end
+
+	event AddResourceToList extends AddResourceToList
+	end
+
+	event RemoveResourceFromList extends RemoveResourceFromList
+	end
+	
+	event BorrowBook
+	any u b where
+		@grd1:b ∈ book
+		@grd2:getTotalTokens(b) > getCurrentTokens(b)
+		@grd3:u ∈ registeredUsers
+		@grd4:u ∈ loggedInUsers
+	then
+		@act1:getCurrentTokens(b) ≔ getCurrentTokens(b) + 1
+		@act2:getBooks(u) ≔ b
+	end
+	
+	event ReserveBook
+	any u b where
+		@grd1:b ∈ book
+		@grd2:getTotalTokens(b) ≤ getCurrentTokens(b)
+		@grd3:u ∈ registeredUsers
+		@grd4:u ∈ loggedInUsers
+	then
+		@act1:getReserves(b) ≔ getReserves(b) + 1
+		@act2:getStudent(getReserves(b)) ≔ u
+	end
+	
+	event ReturnBook
+	any u b where
+		@grd1:b ∈ book
+		@grd2:u ∈ registeredUsers
+		@grd3:u ∈ loggedInUsers
+	then
+		@act1:getBooks ≔ getBooks ∖ {u ↦ b}
+		@act2:getCurrentTokens(b) ≔ getCurrentTokens(b) − 1
+	end
+	
+	event RevokeBook
+	any a u b where
+		@grd1:b ∈ book
+		@grd2:a ∈ administrators
+		@grd3:u ∈ registeredUsers
+		@grd4:a ∈ loggedInUsers
+	then
+		@act1:getReserves(b) ≔ getReserves(b) + 1
+		@act2:getStudent(getReserves(b)) ≔ u
+	end
+
+end
